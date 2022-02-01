@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* div {
+    width: 400px;
+    height: 400px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+div img {
+    object-fit: cover;
+    object-position: center center;
+} */
+
+.box-one, .box-two {
+    padding: 100px;
+    background-color: chocolate;
+    border: medium solid orange;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.box-bloque {
+    /* display: block; */
+    width: 400px;
+    margin: 48px;
+    border: thin solid black;
+    height: 400px;
+    background-color: orange;
+    /* margin-left: 200px; */
+    /* visibility: hidden; */
+    justify-content: center;
+    align-items: center;
+}
+
+.box-linea {
+    border: thin solid black;
+    background-color: red;
+    margin: 48px;
+    padding: 48px;
+}
+
+
+.displaySpan span {
+    display: inline-block;
+    width: 50px;
+    padding: 200px;
+    height: 50px;
+    border: thin solid black;
+}
+
+.overflow {
+    border: thin solid black;
+    height: 50px;
+    overflow: auto;
+}
+
+.tamanio-caja {
+    width: 600px;
+    height:250px;
+    background-color: aquamarine;
+}
+
+.tamanio-caja > * {
+    margin: 20px 0;
+    padding: 50px;
+    border: thin solid black;
+    float: left;
+    width: 200px;
+}
+
+.container {
+    /* display: inline-block; */
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+    background-color: blue;
+    box-sizing: border-box;
+    width: 200px;
+    color: white;
+    height: 100px;
+}
+
+.container ~ p {
+    display: inline;
+}
+
+.float-container {
+    overflow: auto;
+    /* clear: right; */
+    width: 50%;
+    height: 200px;
+    background-color: red;
+}
+
+.clearFix {
+    clear: both;
+}
+
+.float-container span:nth-of-type(1) {
+    color: white;
+    border-style: dashed;
+}
+
+.colapsomargenes {
+    background-color: skyblue;
+}
+
+.colapsomargenes article {
+    border: thin solid black;
+    margin-top: 60px;
+    margin-bottom: 56px;
+}
+
+/* Centrado de cajas */
+
+.web-site {
+    width: 800px;
+    height: 1000px;
+    background-color: pink;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}

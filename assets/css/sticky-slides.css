@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.viewH {
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+header {
+    background-color: aqua;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+section > article > h3 {
+    padding-top: 12px;
+    position: sticky;
+    top: 50px;
+    background-color: aquamarine;
+    margin: 0 0;
+    /* box-sizing: border-box; */
+    text-align: center;
+    height: 50px;
+
+}
+
+/* span {
+    border: thin solid black;
+    margin-left: 50px;
+    width: 50px;
+    display: inline-block;
+} */
+
+section > article > .content-slide  {
+    height: auto;
+    background-color: bisque;
+    /* margin-bottom: 0; */
+}
+
+section > article > .content-slide > p:nth-child(1)  {
+    /* background-color: bisque; */
+    margin-top: 0;
+    /* margin-bottom: 0; */
+}
+
+section > article > .content-slide > p:nth-child(5)  {
+    /* background-color: bisque; */
+    margin-bottom: 0;
+    /* margin-bottom: 0; */
+}
+
+section > article > .content-slide > p  {
+    /* background-color: bisque; */
+    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    padding: 40px;
+}
+
+.section-nav {
+    text-align: center;
+    margin: 0 auto;
+    /* width: 600px; */
+    max-width: 70%;
+    height: 300px;
+    min-width: 70%;
+    background-color: aliceblue;
+}
+
+.section-nav > div {
+    /* z-index: 2; */
+    border: 2px solid;
+    float: left;
+    width: 200px;
+    min-width: auto;
+    height: 100px;
+    /* padding: 20px; */
+}
+
+.modal-window {
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    display: none;
+}
+
+.modal-window:target {
+    display: block;
+}
+
+.modal-character {
+    margin: 100px auto;
+    opacity: 1;
+    z-index: 3;
+    width:50%;
+    height: 300px;
+    background-color: white;
+}

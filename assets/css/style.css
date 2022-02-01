@@ -1,0 +1,158 @@
+/* Regla CSS consta de 2 partes
+1. el selector
+2. bloque de declaraciones {
+    atributo: valor;
+    atributo-de-mas-dos-palabras: otro-valor;
+}
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#temario-css:target {
+    color: orangered;
+    text-align: center;
+    background-color: skyblue;
+}
+
+
+/* Selectores basicos
+1. etiquetas - son elementos html 
+2. identificadores - atributos id - #
+3. clases - atributos class - .
+*/
+
+p {
+    color: midnightblue;
+}
+
+
+/* Dar estilos con id se considera un antipatron */
+#parrafo-dos {
+    background-color: skyblue;
+}
+
+/* Dar estilos con clase nos permite reutilizar nuestro codigo css*/
+.texto-20 {
+    font-size: 20px;
+}
+
+.texto-32 {
+    font-size: 32px;
+}
+
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.bg-steelblue {
+    background-color: steelblue;
+}
+
+.text-white {
+    color: white;
+}
+
+.hijos-directos > ul > li > .xd {
+    background-color: thistle;
+}
+
+.hijos-descendientes li:nth-child(4) {
+    color: red;
+    background-color: blue;
+}
+
+/* Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estèn por debajo del elemento de referencia */
+.hermanos-general ~ .hermano > .hermano2 + li + li + li {
+    background-color: thistle;
+}
+
+.hermanos-adyacentes + li{
+    background-color: thistle;
+}
+
+/* Selectores de atributos */
+
+.selectores-atributos > ul > li a[href*="s"] {
+    color: orangered;
+}
+
+.selector-universal *{
+    font-family: sans-serif;
+    color: red;
+}
+
+/* Pseudoclases required */
+
+
+.form-pseudoclase *:valid {
+    border-color: green;
+}
+
+.form-pseudoclase *:invalid {
+    border-color: red;
+}
+
+.form-pseudoclase input[name="email"]:focus {
+    background-color: skyblue;
+    font-size: 40px;
+}
+
+.form-pseudoclase *:hover {
+    font-size: 30px;
+    background-color: black;
+}
+.child-number > h3:nth-child(odd) {
+    color: red;
+    background-color: pink;
+}
+.child-number > h3:nth-child(even) {
+    color: white;
+    font-size: 30px;
+    background-color: black;
+}
+
+.article-pseudoclase div:last-of-type {
+    background-color: red;
+}
+
+.article-pseudoclase p:nth-of-type(2) {
+    background-color: pink;
+}
+
+.article-pseudoclase *:not(p) {
+    background-color: violet;
+}
+
+.qqq + p ~ li{
+    background-color: red;
+}
+
+.l::before {
+    content: "xd";
+}
+
+.l::after {
+    content: "dx";
+}
+
+.p-pseudo::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudo::first-line {
+    color: orange;
+}
+
+.p-pseudo::selection {
+    color: green;
+    background-color: red !important;
+}
+
+#p-placeholder::placeholder {
+    color: green;
+}

@@ -1,0 +1,47 @@
+html  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border:  thick dashed red;
+    margin: 0 auto;
+    background-image: url(../img/paisaje.jpg);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: bottom;
+}
+
+header {
+    width: 100%;
+    opacity: .5;
+    height: 100vh;
+    background-image: url(../img/paisaje.jpg);
+    background-origin: border-box;
+    background-attachment: fixed;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; */
+    /* margin-top: 800px; */
+}
+
+.bg-multiple {
+    
+    width: 50%;
+    height: 30vh;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: thick dashed red;
+    background-image: url(../img/css.png), url(../img/paisaje.jpg);
+    background-size: 10%, cover;
+    background-repeat: repeat-x;
+}
+

@@ -1,0 +1,84 @@
+
+
+
+.static {
+    background-color: yellow;
+    position: static;
+}
+
+.relative {
+    background-color: turquoise;
+    position: relative;
+    /* top: 50px; */
+    /* left: 50px; */
+    border: thin solid black;
+    /* bottom: 100px; */
+    bottom: 50px;
+    right: 60px;
+    /* top: -20px; */
+    /* left: -0px; */
+}
+
+.absolute {
+    background-color: #55A;
+    position: absolute;
+    /* top: 20px;
+    left: 100px; */
+    width: 100px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+}
+
+.relative-parent {
+    background-color: antiquewhite;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    height: 50px;
+}
+
+.absolute-child {
+    background-color: tomato;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.fixed {
+    background-color: lightgreen;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    /* z-index: 1 ; */
+    /* top: 30px; */
+    /* left: 100px; */
+}
+
+.sticky {
+    background-color: lightskyblue;
+    position: sticky;
+    top: 50px;
+}
+
+.sticky-child {
+    box-sizing: border-box;
+    border: thin solid black;
+    padding: 12px;
+    width: 100px;
+    float: left;
+    background-color: lightgreen;
+    position: sticky;
+    top: 100px;
+    left: 100px;
+}
+
+.sticky-parent {
+    margin: 0 auto;
+    border: thin solid black;
+    width: 300px;
+    height: 200px;
+}

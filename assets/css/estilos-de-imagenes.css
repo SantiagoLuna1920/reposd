@@ -1,0 +1,12 @@
+header img {
+    height: 300px;
+    object-position: bottom right;
+}
+
+header {
+    width: 50%;
+    height: 500px;
+    border: thick dashed red;
+    /* background-position: bottom center; */
+    /* object-fit: cover; */
+}

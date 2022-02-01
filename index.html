@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Aquì aoprenderè todo sobre CSS">
+    <meta property="og:title" content="CSS">
+    <meta property="og:description" content="Empezando con css">
+    <meta property="og:url" content="http://">
+    <meta property="og:image" content="http://">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="./assets/img/css.png">
+    <link rel="icon" href="./assets/img/css.png">
+    <link rel="canonical" href="http://fonts.googleapis.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css  ">
+    <title>Aprendiendo CSS</title>
+</head>
+<body>
+<article>
+    <h1 id="temario-css">Aprendiendo CSS</h1>
+    <p>Cascading Style Sheets</p><!-- Hojas de estilo cascada, lenguaje de definicion de la presentacion de los documentos de html -->
+    <h2>Temario del curso</h2>
+    <ul type="square">
+        <li><a href="./index.html#selectores-basicos">Selectores basicos</a></li>
+        <li><a href="./index.html#selectores-avanzados">Selectores avanzados</a></li>
+        <li><a href="./index.html#pseudoclases">Pseudoclases</a></li>
+        <li><a href="./index.html#pseudoelementos">Pseudoelementos</a></li>
+        <li><a href="./index.html#modelo-de-caja">Modelo de caja</a></li>
+        <li><a href="/positions.html">Posicionamiento CSS</a></li>
+        <li><a href="/sticky-slides.html">Slides efecto con sticky</a></li>
+        <li><a href="/colores.html">Colores en CSS</a></li>
+        <li><a href="/units.html">Unidades de medida en CSS</a></li>
+        <li><a href="/variables-functions.html">Variables y funciones en CSS</a></li>
+        <li><a href="/fonts-texts.html">Estilos de fuente en CSS</a></li>
+        <li><a href="backgrounds.html">Fondos CSS</a></li>
+        <li><a href="estilos-imagenes.html">Estilos de imàgenes</a></li>
+    </ul>
+</article>
+
+    <article id="selectores-basicos">
+        <h2>Selectores basicos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ipsam nihil fugit explicabo ducimus soluta necessitatibus perspiciatis modi tenetur itaque nesciunt, quis distinctio autem dolor iure. Corporis ipsa facere nisi?</p>
+        <p id="parrafo-dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus ea rem facere tenetur natus, consequatur perspiciatis dolorum laudantium. Porro possimus veniam sunt dolor cupiditate reiciendis labore vero reprehenderit officiis?</p>
+        <p class="texto-32 bg-skyblue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat accusantium minus quam, fuga ad expedita. Fugit, temporibus quae maxime a eveniet eaque aut optio libero qui! In debitis necessitatibus voluptatem?</p>
+        <p class="texto-20 bg-steelblue text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, at! Et neque dolorum fugit, nobis saepe est ullam laudantium incidunt? Dolor vitae tempore commodi ipsa, suscipit labore quam consequatur totam?</p>
+        <a href="./index.html#temario-css">☝️</a>
+    </article>
+    <article id="selectores-avanzados">
+        <h2>Selectores avanzados</h2>
+        <h3>Selectores de hijos</h3>
+        <h4>Selectores de hijos directos</h4>
+        <h4>Selectores de hijos descendientes</h4>
+        
+        <article class="hijos-directos">
+            <ul>
+                <li>Primavera <span class="xd">xd</span> </li>
+                <li>Verano</li>
+                <li>Otonio</li>
+                <li>invierno</li>
+                <p>hola</p>
+            </ul>
+        </article>
+            
+        <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h3>Selectores de hermanos</h3>
+        <h4 class="hermanos-general">Selector de hermanos (en general)</h4>
+        <ul class="hermano">
+            <li class="hermano2"><b>Primavera</b></li>
+            <li ><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li>Invierno</li>
+            <p>xd</p>
+        </ul>
+        <ul>
+            <li>xd</li>
+            <li>xd</li>
+            <li>xd</li>
+        </ul>
+        <h4>Selector de hermanos adyacente</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-adyacentes"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h3>Selectores de atributos</h3>
+        <nav class="selectores-atributos">
+            <ul>
+                <li><a href="ss" target="_blank">Inicio</a></li>
+                <li><a href="" target="_blank">Cursos</a></li>
+                <li><a href="" target="_blank" name="xd">Blog</a></li>
+                <li><a href="" target="_blank">CV</a></li>
+                <li><a href="" target="_blank">Ahora</a></li>
+                <li><a href="" target="_blank">Notas</a></li>
+            </ul>
+        </nav>
+        <h3>Selector universal</h3>
+        <nav class="selector-universal">
+            <ul>
+                <li><b>Primavera</b></li>
+                <li><b>Verano</b></li>
+                <li><b>Otoño</b></li>
+                <li><b>Invierno</b></li>
+                <p>Hola</p>
+            </ul>
+        </nav>
+        <a href="./index.html#temario-css">☝️</a>
+        
+    </article>
+    <hr>
+    <article id="pseudoclases">
+        <h3>Pseudoclases</h3>
+        <form class="form-pseudoclase" action="">
+            <input type="text" name="names" placeholder="nombre" required><br>
+            <input type="email" name="email" placeholder="Digita tu email" required>
+            <input type="submit">
+            <br>
+            <a href="#seccion1">Seccion1</a>
+            <a href="#seccion2">Seccion2</a>
+            <a href="#seccion3">Seccion3</a>
+        </form>
+        <a href="./index.html#temario-css">☝️</a>
+    </article>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <article class="child-number">
+        <h3>1</h3>
+        <h3>2</h3>
+        <h3>3</h3>
+        <h3>4</h3>
+        <h3>5</h3>
+        <h3>6</h3>
+        <h3>7</h3>
+        <h3>8</h3>
+        <h3>9</h3>
+        <h3>10</h3>
+        <h3>11</h3>
+        <h3>12</h3>
+    </article>
+    
+    
+    <article class="article-pseudoclase">
+        <header>Esto es un header</header>
+        <p>Esto es un parrafo </p>
+        <div>Esto es un div</div>
+        <p>esto es un parrafo</p>
+        <div>Esto es un div</div>
+        <footer>Esto es un footer</footer>
+    </article>
+    
+    <ul class="aaa">
+        <p class="aaa2">hola</p>
+        <li class="qqq">1</li>
+        <p class="aaa3">hola 2</p>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <h2>Elementos pseudoelementos</h2>
+
+    <span class="l">iado</span>
+
+    <p class="p-pseudo">
+        lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quisquam, consequuntur praesentium quod odit mollitia voluptates qui, reiciendis, aspernatur soluta eum sunt hic similique voluptas voluptatibus cupiditate harum labore nostrum!
+    </p>
+    <label for="p-placeholder">Escribe tu nombre</label>
+    <input type="text" id="p-placeholder" name="nombre" placeholder="escribe tu nombre">
+    <hr>
+    <a href="./index.html#temario-css">☝️</a>
+    <article id="pseudoelementos"></article>
+    <hr>
+    <article id="modelo-de-caja">
+        <h2>Modelo de caja</h2>
+       <a href="./box-model.html">Ir a modelo de caja</a>
+        
+
+        <a href="./index.html#temario-css">☝️</a>
+    </article>
+
+
+</body>
+
+
+<script src="./index.js"></script>
+</html>

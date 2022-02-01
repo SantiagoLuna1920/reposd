@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Cascadia-Italica";
+    src: url("../CascadiaCodeItalic.woff2") format("woff2");
+}
+
+html {
+    font-family: "Cascadia-Italica", sans-serif;
+    text-transform: uppercase;
+    /* font-variant: small-caps; */
+}
+
+span {
+    background-color: red;
+    display: inline-block;
+    width: 70%;
+    border: solid 2rem;
+}
+
+span + div {
+    background-color: red;
+    outline: chartreuse;
+}
